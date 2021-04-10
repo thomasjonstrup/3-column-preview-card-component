@@ -46,7 +46,6 @@ html {
 body {
 	font-size: 1.2rem;
 	font-family: $font-family;
-	color: $very-light-gray;
 	background-color: $very-light-gray;
 	font-weight: 400;
 	line-height: 1.6;
@@ -228,58 +227,6 @@ $breakpoints-down: (
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	margin-bottom: 2rem;
-	margin-top: 7.1rem;
-	/* 	grid-template-columns: 32.7rem; */
-	grid-template-columns: 85vw;
-	grid-template-areas:
-		"card-one"
-		"card-two"
-		"card-four"
-		"card-five"
-		"card-three";
-	grid-column-gap: 2rem;
-	grid-row-gap: 2rem;
-	justify-content: center;
-	align-content: center;
-	letter-spacing: 0.03px;
-
-	@include breakpoint-up(medium) {
-		display: grid;
-		grid-template-columns: repeat(2, 255px);
-		grid-template-rows: 28.2rem 26.6rem 28.2rem 26.6rem;
-		grid-template-areas:
-			"card-one card-one"
-			"card-two card-three"
-			"card-four card-four"
-			"card-five card-five";
-		justify-content: center;
-		align-content: center;
-		letter-spacing: 0.03px;
-	}
-
-	@include breakpoint-up(large) {
-		display: grid;
-		grid-template-columns: repeat(4, 255px);
-		grid-template-rows: 28.2rem 26.6rem;
-		grid-template-areas:
-			"card-one card-one card-two card-five"
-			"card-three card-four card-four card-five";
-		justify-content: center;
-		align-content: center;
-	}
-
-	&-3 {
-		grid-template-columns: repeat(3, 1fr);
-	}
 }
 
 // Mixins
